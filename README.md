@@ -21,7 +21,7 @@
 
 
 ## 1475B_Response
-<img src="./img/false friend table.png" width="80%">
+<img src="./img/false friend table.png" width="50%">
 
 
 
