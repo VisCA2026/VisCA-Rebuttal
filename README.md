@@ -15,10 +15,13 @@
 <img src="./img/embedding_choice.png" width="100%">
 
 ## C3: ASR interpretation of Table V and Table XV (1475A, 1475B)
-<img src="./img/TableV.png" width="100%">
-<img src="./img/TableXV.png" width="100%">
+<img src="./img/TableV.png" width="80%">
+<img src="./img/TableXV.png" width="80%">
 
 
+
+## 1475B_Response
+<img src="./img/false friend table.png" width="80%">
 
 
 
