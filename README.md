@@ -31,7 +31,7 @@ Table XIII presents the ASR of VisCA using both task-aware and task-agnostic wor
 <img src="./img/Task-agnostic.png" width="50%">
 
 ### 2. Each character’s Unicode code point
-<img src="./img/friend_table.png" width="50%">
+<img src="./img/friend_table.png" width="40%">
 
 
 
