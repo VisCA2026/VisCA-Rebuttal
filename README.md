@@ -21,6 +21,13 @@
 
 
 ## 1475B_Response
+### 1. Robustness under Task-agnostic Word Selection
+To evaluate the robustness and adaptability of VisCA in scenarios where task type is unknown or mixed, we conduct an additional experiment using a task-agnostic word selection strategy. Instead of relying on task-specific heuristics (e.g., using sentiment words for SST-2), we only utilize KeyBERT, an unsupervised keyword extractor, to identify salient words in each input without referring to task labels.
+We construct a hybrid evaluation set by randomly sampling 50 instances from each of the six tasks used in our main experiments, resulting in a total of 300 diverse examples. For each input, we extract the top-3 keywords using KeyBERT and apply character-level perturbations on them. All other attack configurations (e.g., perturbation rules, query protocols, and target model) remain unchanged from the task-aware setup.
+Table~\ref{task-agnostic-attack} presents the ASR of VisCA using both task-aware and task-agnostic word selection. The task-agnostic strategy achieves a comparable ASR of 24.00\%, only 1.33 points lower than the task-aware baseline. This demonstrates that VisCA retains strong effectiveness even without access to task-specific information, and is robust under general-purpose word selection strategies.
+<img src="./img/Comparison between task-aware and task-agnostic.png" width="50%">
+
+### 2. Each character’s Unicode code point
 <img src="./img/false friend table.png" width="50%">
 
 
