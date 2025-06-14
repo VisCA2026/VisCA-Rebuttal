@@ -17,8 +17,8 @@
 <img src="./img/embedding_choice.png" width="100%">
 
 ## C3: ASR interpretation of Table V and Table XV (1475A, 1475B)
-<img src="./img/TableV.png" width="80%">
-<img src="./img/TableXV.png" width="80%">
+<img src="./img/gpt-35.png" width="80%">
+<img src="./img/gpt-4o.png" width="80%">
 
 
 ## 1475A_Response
