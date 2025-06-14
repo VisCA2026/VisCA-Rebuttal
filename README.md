@@ -25,6 +25,9 @@
 ### 1. Spelling Correction Resilience
 VisCA’s Eye-only strategy transposes adjacent letters to mimic natural typing or visual perception errors. Most spell checkers avoid correcting such patterns, especially when the result still forms a plausible word (e.g., “lvoe” instead of “love”). In some cases, the transposition even results in another valid word with a different meaning (e.g., “form” $\rightarrow$ “from”, “calm” $\rightarrow$ “clam”, “stop” $\rightarrow$ “spot”), which are syntactically correct and unlikely to be corrected. These subtle yet valid changes reduce the chance of detection and can lead LLMs to incorrect interpretations. In contrast, EvilText uses homoglyph substitutions that retain word structure but bypass Unicode-based detection, while Bad Characters injects invisible symbols, which are ignored by spell checkers. Thus, VisCA, like these baselines, remains robust against standard spelling correction, while uniquely leveraging human-like errors to mislead LLMs.
 
+### 2. Performance on reasoning model
+We observe that VisCA has relatively lower ASR on advanced reasoning models like DeepSeek-R1 and GPT-4.5. This may be attributed to their enhanced contextual understanding and reasoning capabilities, which help mitigate the subtle character-level perturbations introduced by VisCA. Such models are better at detecting and compensating for minor textual inconsistencies, thus reducing attack effectiveness. Nevertheless, VisCA still achieves notable ASR improvements over baselines, demonstrating robustness even against advanced reasoning LLMs.
+
 
 ## 1475B_Response
 ### 1. Robustness under Task-agnostic Word Selection
